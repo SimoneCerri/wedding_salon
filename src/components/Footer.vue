@@ -1,9 +1,9 @@
 <template>
     <footer class="bg-dark text-white py-4">
         <div class="container text-center">
-            <p class="mb-2">The Gilded Aisle Wedding Salon | Est. 2010</p>
+            <p class="mb-2">The Turin Wedding Salon | Est. 2010</p>
             <p class="mb-0">
-                <small>&copy; {{ currentYear }} All Rights Reserved.</small>
+                <small>&copy; {{ currentYear }} All Rights Reserved to ScorpioN_Dev.</small>
             </p>
             <div class="mt-2">
                 <a href="#home" class="text-white mx-2 text-decoration-none hover-link">Home</a>

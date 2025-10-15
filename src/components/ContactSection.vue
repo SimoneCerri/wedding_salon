@@ -29,8 +29,7 @@
                                 placeholder="Guest count, style preference, etc."></textarea>
                         </div>
                         <div class="d-grid">
-                            <button type="submit" class="btn btn-dark btn-lg fw-bold py-3 rounded-pill">Send
-                                Inquiry</button>
+                            <button type="submit" class="btn btn-dark btn-lg fw-bold py-3 rounded-pill">Send</button>
                         </div>
                     </form>
 
