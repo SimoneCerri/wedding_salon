@@ -1,46 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
   <meta charset="UTF-8">
   <link rel="icon" href="/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Turin Wedding Salon</title>
+  <title>Spoiler, Ti Sposo! - Wedding Salon</title>
   <!-- Load Bootstrap 5 CSS via CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <!-- Optional: Use a nice Google Font -->
+  <!-- Load Inter font for clean body text/fallback -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@100..900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <style>
+    /*
+        BRANDING IMPLEMENTATION
+        Color Palette:
+        #f2b5d6 (Primary/Soft Pink)
+        #f74545 (Accent/Bright Red)
+        #fce8f2 (Light Background)
+        #333 (Dark Text)
+        white (Light Text/Background)
+        */
+    :root {
+      /* Define the new color palette as CSS Variables */
+      --st-primary: #f2b5d6;
+      --st-accent: #f74545;
+      --st-light-bg: #fce8f2;
+      --st-dark: #333;
+      --st-light: white;
+
+      scroll-behavior: smooth;
+    }
+
+    /* Embed the custom 'Hand Originals' font */
+    @font-face {
+      font-family: 'Hand Originals';
+      src: url('/FontsFree-Net-Hand-Originals.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
     /* Apply the custom font and some base styles */
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #f8f9fa;
-      /* Light gray background */
+      color: var(--st-dark);
+      background-color: var(--st-light);
     }
 
     h1,
     h2,
     h3,
-    .display-4 {
-      font-family: 'Playfair Display', serif;
+    h4,
+    .display-1,
+    .display-4,
+    .custom-font-heading {
+      font-family: 'Hand Originals', cursive, 'Inter', sans-serif;
+      font-weight: normal;
+      /* The custom font is handwriting, so we use 'normal' */
     }
 
-    /* Custom scroll-padding for internal links (optional) */
-    :root {
-      scroll-behavior: smooth;
+    /* Custom utility classes based on the new palette */
+    .bg-st-primary {
+      background-color: var(--st-primary) !important;
+    }
+
+    .text-st-primary {
+      color: var(--st-primary) !important;
+    }
+
+    .bg-st-accent {
+      background-color: var(--st-accent) !important;
+    }
+
+    .text-st-accent {
+      color: var(--st-accent) !important;
+    }
+
+    .bg-st-light-bg {
+      background-color: var(--st-light-bg) !important;
+    }
+
+    .text-st-dark {
+      color: var(--st-dark) !important;
+    }
+
+    .btn-st-accent {
+      background-color: var(--st-accent);
+      border-color: var(--st-accent);
+      color: var(--st-light);
+      transition: all 0.3s;
+    }
+
+    .btn-st-accent:hover {
+      background-color: var(--st-dark);
+      border-color: var(--st-dark);
+      color: var(--st-light);
+      transform: scale(1.03);
+    }
+
+    .btn-outline-st-primary {
+      border-color: var(--st-primary);
+      color: var(--st-primary);
+    }
+
+    .btn-outline-st-primary:hover {
+      background-color: var(--st-primary);
+      color: var(--st-dark);
     }
   </style>
 </head>
 
 <body>
   <div id="app"></div>
+  <!-- The entry point for the Vue application -->
   <script type="module" src="/src/main.js"></script>
-  <!-- Load Bootstrap 5 JS Bundle via CDN (for dropdowns, modals, etc., though we won't use them here) -->
+  <!-- Load Bootstrap JS bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
