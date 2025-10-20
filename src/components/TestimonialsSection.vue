@@ -92,7 +92,7 @@
 
 /* Add custom background image reference if needed (assuming fedine.jpg is available)  */
 #testimonials {
-    background-image: url(fedine.jpg);
+    background-image: url(/fedine.jpg);
     background-position: center;
     background-size: cover;
     background-position-y: -46em;

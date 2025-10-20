@@ -66,7 +66,7 @@
 
 .overlay {
   border-radius: 20px 20px 0 0;
-  background-image: url(floreale.jpg);
+  background-image: url(/floreale.jpg);
   background-position: center;
   background-size: cover;
 }
