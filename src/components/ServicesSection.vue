@@ -64,7 +64,22 @@
     border-color: var(--st-primary) !important;
 }
 
+h2 {
+    padding: 0.5em 0;
+}
+
+h3 {
+    padding: 1.5em;
+    line-height: 2em;
+}
+
 .card {
     border: 1px solid var(--st-light-bg) !important;
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
 </style>

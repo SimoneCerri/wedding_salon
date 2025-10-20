@@ -39,6 +39,10 @@
   filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
 }
 
+h1 {
+  padding: 0.5em;
+}
+
 @media (max-width: 768px) {
   .logo-style {
     max-width: 550px;

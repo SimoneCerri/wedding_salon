@@ -132,4 +132,17 @@
     /* Use strong shadow for maximum readability against any background */
     text-shadow: 1px 1px 6px #000;
 }
+
+h2 {
+    padding: 1em 0;
+}
+
+h4 {
+    padding: 1em 0;
+    line-height: 2em;
+}
+
+a {
+    border: 1px solid var(--st-primary);
+}
 </style>

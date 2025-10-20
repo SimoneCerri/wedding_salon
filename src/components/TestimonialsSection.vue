@@ -74,12 +74,12 @@
     h2 {
         color: var(--st-light);
         margin-bottom: 2em !important;
-        margin-top: -0.5em !important;
     }
 
     .lead {
         color: var(--st-dark) !important;
         background-color: var(--st-light-bg);
+        border: 1px solid var(--st-primary);
         max-width: 600px;
         border-radius: 10px;
         padding: 0.25em;
@@ -88,6 +88,12 @@
 
 .card {
     border: 1px solid var(--st-primary) !important;
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
 
 /* Add custom background image reference if needed (assuming fedine.jpg is available)  */
@@ -95,7 +101,7 @@
     background-image: url(/fedine.jpg);
     background-position: center;
     background-size: cover;
-    background-position-y: -46em;
+    background-position-y: -45em;
 
     @media screen {}
 }

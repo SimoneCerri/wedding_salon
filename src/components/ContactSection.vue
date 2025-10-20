@@ -72,4 +72,19 @@ const submitForm = () => {
     box-shadow: 0 0 0 0.25rem rgba(247, 69, 69, 0.25) !important;
     /* Custom shadow using accent color */
 }
+
+h2 {
+    padding: 0.5em 0;
+    line-height: 2em;
+}
+
+button {
+    border: 1px solid var(--st-primary);
+    background-color: var(--st-light-bg);
+}
+
+.d-grid {
+    display: flex;
+    justify-content: center;
+}
 </style>
